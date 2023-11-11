@@ -23,3 +23,18 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+/* custom stuff below */
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: thin red solid;
+  aspect-ratio: 1;
+}
+
+.item {
+  border: thin blue solid;
+  margin: 10px;
+  padding: 10px;
+}
