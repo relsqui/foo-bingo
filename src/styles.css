@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #25201d;
+  background-color: #2c1810;
 }
 
 
@@ -28,9 +28,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: #ff8c00;
   border: thick black solid;
-  border-radius: 0.7vmin;
+  border-radius: 0.8vmin;
   font-weight: bolder;
   aspect-ratio: 1;
   margin: 0.5vmin;
