@@ -6,7 +6,9 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -34,11 +36,14 @@ video {
 
 .item {
   display: flex;
-  container: item / size;
   align-items: center;
   justify-content: center;
   border: medium gray solid;
   aspect-ratio: 1;
   margin: 10px;
   padding: 10px;
+}
+
+.item-content {
+  font-size: 5cqw;
 }
