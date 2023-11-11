@@ -17,6 +17,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   line-height: 1.5;
+  background-color: #25201d;
 }
 
 /* custom stuff below */
@@ -35,15 +36,17 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   aspect-ratio: 1;
-  max-width: 70vw;
-  max-height: 70vh;
+  max-width: 85vw;
+  max-height: 85vh;
 }
 
 .item {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: medium gray solid;
+  background-color: #ff8c00;
+  border: medium black solid;
+  font-weight: bolder;
   aspect-ratio: 1;
   margin: 10px;
   padding: 10px;

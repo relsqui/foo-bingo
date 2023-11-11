@@ -2,12 +2,12 @@ import * as React from "react";
 import { items } from './items.json';
 
 function Item({ content }) {
+  // I want to implement this here but I'm not sure how
+  // https://stackoverflow.com/a/74008654/252125
   return (
     <>
       <div class="item">
-        <div class="item-content">
           {content}
-        </div>
       </div>
     </>
   );
