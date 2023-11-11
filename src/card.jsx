@@ -1,4 +1,5 @@
 import * as React from "react";
+import { items } from './items.json';
 
 function Item({ content }) {
   return (
@@ -10,6 +11,10 @@ function Item({ content }) {
       </div>
     </>
   );
+}
+
+function chooseItems() {
+  
 }
 
 export default function Card() {
