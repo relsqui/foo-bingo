@@ -3,7 +3,7 @@
 /* default to border-box */
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 2cqw;
 }
 
 *,
@@ -28,14 +28,24 @@ video {
 
 /* custom stuff below */
 
+.content {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+}
+
 .card {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(5, 1fr);
   aspect-ratio: 1;
+  max-width: 80vw;
+  max-height: 100vh;
 }
 
 .item {
-  container: item / inline-size;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,8 +53,4 @@ video {
   aspect-ratio: 1;
   margin: 10px;
   padding: 10px;
-}
-
-.item-content {
-  font-size: 15cqw;
 }

@@ -9,7 +9,9 @@ import "./styles.css";
 export default function App() {
   return (
     <>
-     <Card />
+      <div class="content">
+        <Card />
+      </div>
     </>
   );
 }
