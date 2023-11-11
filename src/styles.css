@@ -29,11 +29,12 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  aspect-ratio: 1;
   background-color: #ff8c00;
   border: thick black solid;
   border-radius: 0.8vmin;
-  font-weight: bolder;
-  aspect-ratio: 1;
   margin: 0.5vmin;
   padding: 1vmin;
+  font-size: 3vmin;
+  font-weight: bolder;
 }
