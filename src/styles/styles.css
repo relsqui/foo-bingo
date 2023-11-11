@@ -29,12 +29,15 @@ video {
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border: thin red solid;
   aspect-ratio: 1;
 }
 
 .item {
-  border: thin blue solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: medium gray solid;
+  aspect-ratio: 1;
   margin: 10px;
   padding: 10px;
 }
