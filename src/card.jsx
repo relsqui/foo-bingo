@@ -16,7 +16,7 @@ function Item({ content }) {
 function chooseItems() {
   // TODO: better shuffle
   const shuffled = [...items].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, 25);
+  return shuffled.slice(0, 16);
 }
 
 export default function Card() {
