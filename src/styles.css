@@ -2,8 +2,7 @@
 
 /* default to border-box */
 html {
-  box-sizing: border-box;
-  font-size: 2cqw;
+  /* box-sizing: border-box; */
 }
 
 *,
@@ -14,16 +13,10 @@ html {
 
 /* adjust typography defaults */
 body {
-  margin: 1rem;
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
   line-height: 1.5;
-}
-
-/* images and videos max out at full width */
-img,
-video {
-  height: auto;
-  max-width: 100%;
 }
 
 /* custom stuff below */
@@ -34,15 +27,16 @@ video {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: blue;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   aspect-ratio: 1;
-  max-width: 80vw;
-  max-height: 100vh;
+  max-width: 70vw;
+  max-height: 70vh;
 }
 
 .item {
