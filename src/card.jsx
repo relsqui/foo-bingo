@@ -14,21 +14,13 @@ function Item({ content }) {
 }
 
 function chooseItems() {
-  
+  // https://bobbyhadz.com/blog/javascript-get-multiple-random-elements-from-array#get-multiple-random-elements-from-an-array-in-javascript
+  const shuffled = [...items].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, 25);
 }
 
 export default function Card() {
-  const cardItems = [
-    "one",
-    "two",
-    "three",
-    "four",
-    "five",
-    "six",
-    "seven",
-    "eight",
-    "nine",
-  ];
+  const cardItems = chooseItems();
 
   return (
     <>

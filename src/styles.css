@@ -30,11 +30,12 @@ video {
 
 .card {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, auto);
   aspect-ratio: 1;
 }
 
 .item {
+  container: item / inline-size;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,5 +46,5 @@ video {
 }
 
 .item-content {
-  font-size: 5cqw;
+  font-size: 15cqw;
 }
