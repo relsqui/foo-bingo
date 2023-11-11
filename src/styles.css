@@ -34,6 +34,7 @@ video {
 
 .item {
   display: flex;
+  container: item / size;
   align-items: center;
   justify-content: center;
   border: medium gray solid;

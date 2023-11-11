@@ -4,7 +4,7 @@ import React from "react";
 import Card from "./card.jsx";
 
 // Import and apply CSS stylesheet
-import "./styles/styles.css";
+import "./styles.css";
 
 export default function App() {
   return (
