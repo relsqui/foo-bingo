@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Nunito Sans, sans-serif;
-  background-color: #181810;
+  background-color: #101000;
 }
 
 .content {
@@ -21,8 +21,8 @@ body {
 
 .title {
   font-family: Metal Mania, serif;
-  color: #f02820;
-  text-shadow: black 5px 5px 5px;
+  color: #e02820;
+  text-shadow: #501810 5px 5px 5px;
   letter-spacing: 0.1em;
   display: block;
   font-size: 7vmin;
