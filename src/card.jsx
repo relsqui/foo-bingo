@@ -6,7 +6,6 @@ function Chip() {
   return (
     <>
       <span className="chip">
-        {/*<span className="chip offset"></span>*/}
       </span>
     </>
   );
