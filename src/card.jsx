@@ -4,9 +4,17 @@ import { styled } from "styled-components";
 import { items } from "./items.json";
 
 
-const Chip = styled.span.attrs({ className: "chip"})`
+const BaseChip = styled.span.attrs({ className: "chip"})`
+  position: relative;
   left: 1em;
+  top: 1em;
 `;
+
+function Chip() {
+  return (<span class="chipHolder">
+      <BaseChip />
+    </span>);
+}
 
 function Item({ content, hasChip, clickHandler }) {
   const chip = hasChip ? <Chip /> : "";

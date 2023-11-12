@@ -60,11 +60,22 @@ body {
   font-weight: 800;
 }
 
+
+/*
+chipHolder lets us make the chip position absolute and relative
+at the same time -- the 
+*/
+
+.chipHolder {
+  position: absolute;
+  display: flex;
+}
+
 .chip {
+  position: relative;
   background-color: var(--chip-color);
   aspect-ratio: 1;
   height: 5em;
-  position: absolute;
   border-radius: 50%;
   border: medium var(--accent-color) solid;
   opacity: 60%;
