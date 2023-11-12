@@ -1,12 +1,18 @@
 import * as React from "react";
 import { items } from './items.json';
 
+function Chip() {
+  return (
+    <span className="chip"></span>
+  );
+}
+
 function Item({ content, hasChip }) {
-  
   return (
     <>
       <button className="item">
           {content}
+        <Chip />
       </button>
     </>
   );

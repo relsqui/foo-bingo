@@ -52,3 +52,14 @@ body {
   font-size: 2.5vmin;
   font-weight: 800;
 }
+
+.chip {
+  background-color: red;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  opacity: 50%;
+}
