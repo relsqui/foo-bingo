@@ -1,10 +1,17 @@
 import * as React from "react";
-import { useState, styled } from "react";
+import { useState } from "react";
+import { styled } from "styled-components";
 import { items } from "./items.json";
 
-function Chip() {
-  return styled(<span className="chip" />)``;
+function BaseChip() {
+  return <span className="chip" />;
 }
+
+const Chip = styled(BaseChip)`
+  top: 20px;
+  left: 20px;
+  background: blue;
+`;
 
 function Item({ content, hasChip, clickHandler }) {
   const chip = hasChip ? <Chip /> : "";
