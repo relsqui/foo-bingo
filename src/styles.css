@@ -22,7 +22,7 @@ body {
 .title {
   font-family: Metal Mania, serif;
   color: #d81810;
-  text-shadow: #501810 5px 5px 3px;
+  text-shadow: #501810 4px 4px 3px;
   letter-spacing: 0.1em;
   display: block;
   font-size: 7vmin;
@@ -45,9 +45,9 @@ body {
   text-align: center;
   aspect-ratio: 1;
   background-color: #ff8c00;
-  border: thick black solid;
+  border: medium #501810 solid;
   border-radius: 0.8vmin;
-  margin: 0.1vmin;
+  margin: 0.3vmin;
   padding: 1.2vmin;
   font-size: 2.5vmin;
   font-weight: 800;

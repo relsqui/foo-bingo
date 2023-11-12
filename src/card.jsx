@@ -1,14 +1,13 @@
 import * as React from "react";
 import { items } from './items.json';
 
-function Item({ content }) {
-  // I want to implement this here but I'm not sure how
-  // https://stackoverflow.com/a/74008654/252125
+function Item({ content, hasChip }) {
+  
   return (
     <>
-      <div className="item">
+      <button className="item">
           {content}
-      </div>
+      </button>
     </>
   );
 }
