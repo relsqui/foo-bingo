@@ -3,14 +3,9 @@ import { useState } from "react";
 import { styled } from "styled-components";
 import { items } from "./items.json";
 
-function BaseChip() {
-  return <span className="chip" />;
-}
 
-const Chip = styled(BaseChip)`
-  top: 20px;
-  left: 20px;
-  background: blue;
+const Chip = styled.span.attrs({ className: "chip"})`
+  left: 1em;
 `;
 
 function Item({ content, hasChip, clickHandler }) {
