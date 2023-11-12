@@ -1,9 +1,13 @@
 import * as React from "react";
-import { items } from './items.json';
+import { items } from "./items.json";
 
 function Chip() {
   return (
-    <span className="chip"></span>
+    <>
+      <span className="chip">
+        <span className="chip offset"></span>
+      </span>
+    </>
   );
 }
 
@@ -11,7 +15,7 @@ function Item({ content, hasChip }) {
   return (
     <>
       <button className="item">
-          {content}
+        {content}
         <Chip />
       </button>
     </>
