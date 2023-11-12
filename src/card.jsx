@@ -3,24 +3,23 @@ import { useState } from "react";
 import { styled } from "styled-components";
 import { items } from "./items.json";
 
-const BaseChip = styled.span.attrs((props) => ({
-  className: "chip",
-  left: props.left,
-  top: props.top,
-}))`
-  left: ${props => props.$left}em;
-  top: ${props => props.$top}em;
-`;
+function BaseChip() {
+  return <span className="chip" />;
+}
 
-function makeOffset() {return Math.random() * 2 - 1;}
+const OffsetChip = styled(BaseChip)`
+  left: ${(props) => props.$left}em;
+  top: ${(props) => props.$top}em;
+`
+
+function makeOffset() {
+  return Math.random() * 2 - 1;
+}
 
 function Chip() {
-  const left = makeOffset();
-  const top = makeOffset();
-  console.log(left, top);
   return (
     <span className="chipHolder">
-      <BaseChip left={left} top={top} />
+      <OffsetChip left={makeOffset()} top={makeOffset()} />
     </span>
   );
 }
