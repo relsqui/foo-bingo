@@ -8,10 +8,11 @@ function BaseChip({ left, top, className }) {
   return <span className={classes} />;
 }
 
+
 const OffsetChip = styled(BaseChip)`
   left: ${(props) => props.left}em;
   top: ${(props) => props.top}em;
-`
+`;
 
 function makeOffset() {
   return Math.random() * 2 - 1;
@@ -39,9 +40,23 @@ function Item({ content, hasChip, clickHandler }) {
   );
 }
 
+function shuffle(array) {
+  // This is from: https://stackoverflow.com/a/2450976/252125
+  let currentIndex = array.length,
+    randomIndex;
+  while (currentIndex > 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+  return array;
+}
+
 function chooseItems() {
-  // TODO: better shuffle
-  const shuffled = [...items].sort(() => 0.5 - Math.random());
+  const shuffled = shuffle(items);
   return shuffled.slice(0, 16).map((item) => {
     return { item, hasChip: false };
   });
