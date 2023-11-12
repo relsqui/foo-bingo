@@ -15,7 +15,7 @@ const OffsetChip = styled(BaseChip)`
 `;
 
 function makeOffset() {
-  return Math.random() * 2 - 1;
+  return Math.random() * 1.8 - 0.9;
 }
 
 function Chip() {
