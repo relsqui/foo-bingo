@@ -3,13 +3,14 @@ import { useState } from "react";
 import { styled } from "styled-components";
 import { items } from "./items.json";
 
-function BaseChip() {
-  return <span className="chip" />;
+function BaseChip({ left, top, className }) {
+  const classes = ["chip", className].join(" ");
+  return <span className={classes} />;
 }
 
 const OffsetChip = styled(BaseChip)`
-  left: ${(props) => props.$left}em;
-  top: ${(props) => props.$top}em;
+  left: ${(props) => props.left}em;
+  top: ${(props) => props.top}em;
 `
 
 function makeOffset() {
@@ -17,9 +18,11 @@ function makeOffset() {
 }
 
 function Chip() {
+  const [left, setLeft] = useState(makeOffset());
+  const [top, setTop] = useState(makeOffset());
   return (
     <span className="chipHolder">
-      <OffsetChip left={makeOffset()} top={makeOffset()} />
+      <OffsetChip left={left} top={top} />
     </span>
   );
 }
