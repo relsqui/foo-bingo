@@ -1,14 +1,9 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, styled } from "react";
 import { items } from "./items.json";
 
 function Chip() {
-  return (
-    <>
-      <span className="chip">
-      </span>
-    </>
-  );
+  return styled(<span className="chip" />)``;
 }
 
 function Item({ content, hasChip, clickHandler }) {
@@ -32,8 +27,8 @@ function chooseItems() {
 }
 
 export default function Card() {
-  const [ cardItems, setCardItems ] = useState(() => chooseItems());
-  
+  const [cardItems, setCardItems] = useState(() => chooseItems());
+
   function toggle(index) {
     const newItems = [...cardItems];
     newItems[index].hasChip = !cardItems[index].hasChip;
@@ -44,7 +39,12 @@ export default function Card() {
     <>
       <div className="card">
         {cardItems.map((item, index) => (
-          <Item key={index} content={item.item} hasChip={item.hasChip} clickHandler={() => toggle(index)} />
+          <Item
+            key={index}
+            content={item.item}
+            hasChip={item.hasChip}
+            clickHandler={() => toggle(index)}
+          />
         ))}
       </div>
     </>
