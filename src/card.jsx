@@ -12,11 +12,11 @@ function Chip() {
   );
 }
 
-function Item({ content, hasChip }) {
+function Item({ content, hasChip, clickHandler }) {
   const chip = hasChip ? <Chip /> : "";
   return (
     <>
-      <button className="item">
+      <button className="item" onClick={clickHandler}>
         {content}
         {chip}
       </button>
@@ -37,13 +37,15 @@ export default function Card() {
   
   function toggle(index) {
     const newItems = {...cardItems};
+    newItems[index].hasChip = !cardItems[index].hasChip;
+    setCardItems(newItems);
   }
 
   return (
     <>
       <div className="card">
         {cardItems.map((item, index) => (
-          <Item content={item.item} key={index} />
+          <Item key={index} content={item.item} clickHandler={() => toggle(index)} />
         ))}
       </div>
     </>
