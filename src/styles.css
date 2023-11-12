@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:extrabold');
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Nunito Sans, Segoe UI, sans-serif;
+  font-family: Nunito Sans, sans-serif;
   background-color: #2c1810;
+}
+
+.title {
+  font-family: Metal Mania, serif;
+  color: red;
+  text-shadow: black 5px 5px 5px;
+  display: block;
+  font-size: 7vmin;
+  padding: 0 0 20px 0;
+  margin: 0;
 }
 
 
 .content {
   display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -23,7 +35,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   aspect-ratio: 1;
   max-width: 85vw;
-  max-height: 85vh;
+  max-height: 75vh;
 }
 
 .item {
@@ -37,6 +49,6 @@ body {
   border-radius: 0.8vmin;
   margin: 0.1vmin;
   padding: 1.2vmin;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   font-weight: 800;
 }

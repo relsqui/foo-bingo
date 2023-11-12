@@ -10,6 +10,7 @@ export default function App() {
   return (
     <>
       <div class="content">
+        <h1 class="title">First of October Bingo</h1>
         <Card />
       </div>
     </>
