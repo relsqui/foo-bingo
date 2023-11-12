@@ -6,7 +6,7 @@ function Chip() {
   return (
     <>
       <span className="chip">
-        <span className="chip offset"></span>
+        {/*<span className="chip offset"></span>*/}
       </span>
     </>
   );
@@ -36,7 +36,7 @@ export default function Card() {
   const [ cardItems, setCardItems ] = useState(() => chooseItems());
   
   function toggle(index) {
-    const newItems = {...cardItems};
+    const newItems = [...cardItems];
     newItems[index].hasChip = !cardItems[index].hasChip;
     setCardItems(newItems);
   }
@@ -45,7 +45,7 @@ export default function Card() {
     <>
       <div className="card">
         {cardItems.map((item, index) => (
-          <Item key={index} content={item.item} clickHandler={() => toggle(index)} />
+          <Item key={index} content={item.item} hasChip={item.hasChip} clickHandler={() => toggle(index)} />
         ))}
       </div>
     </>
