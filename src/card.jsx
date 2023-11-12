@@ -6,7 +6,7 @@ function Item({ content }) {
   // https://stackoverflow.com/a/74008654/252125
   return (
     <>
-      <div class="item">
+      <div className="item">
           {content}
       </div>
     </>
@@ -24,9 +24,9 @@ export default function Card() {
 
   return (
     <>
-      <div class="card">
+      <div className="card">
         {cardItems.map((item) => (
-          <Item content={item} />
+          <Item content={item} key={item} />
         ))}
       </div>
     </>

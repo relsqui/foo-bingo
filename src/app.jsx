@@ -9,10 +9,10 @@ import "./styles.css";
 export default function App() {
   return (
     <>
-      <div class="content">
-        <h1 class="title">First of October Bingo</h1>
+      <main className="content">
+        <h1 className="title">First of October Bingo</h1>
         <Card />
-      </div>
+      </main>
     </>
   );
 }
