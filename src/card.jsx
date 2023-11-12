@@ -3,17 +3,26 @@ import { useState } from "react";
 import { styled } from "styled-components";
 import { items } from "./items.json";
 
-
-const BaseChip = styled.span.attrs({ className: "chip"})`
-  position: relative;
-  left: 1em;
-  top: 1em;
+const BaseChip = styled.span.attrs((props) => ({
+  className: "chip",
+  left: props.left,
+  top: props.top,
+}))`
+  left: ${props => props.$left}em;
+  top: ${props => props.$top}em;
 `;
 
+function makeOffset() {return Math.random() * 2 - 1;}
+
 function Chip() {
-  return (<span class="chipHolder">
-      <BaseChip />
-    </span>);
+  const left = makeOffset();
+  const top = makeOffset();
+  console.log(left, top);
+  return (
+    <span className="chipHolder">
+      <BaseChip left={left} top={top} />
+    </span>
+  );
 }
 
 function Item({ content, hasChip, clickHandler }) {

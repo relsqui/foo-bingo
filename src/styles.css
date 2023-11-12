@@ -63,7 +63,10 @@ body {
 
 /*
 chipHolder lets us make the chip position absolute and relative
-at the same time -- the 
+at the same time -- chipHolder is absolute so the chip will be
+centered in the card item without causing anything else to shift
+positions, and then the chip itself is relative so it can be
+offset from that centered position.
 */
 
 .chipHolder {
