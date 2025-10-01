@@ -42,12 +42,10 @@ jobs:
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: what is in here
-        run: tree
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: build
+          path: build/**/*
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
