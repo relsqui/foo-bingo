@@ -11,7 +11,7 @@
       "items": {
         "type": "string"
       },
-      "minItems": 25,
+      "minItems": 16,
       "uniqueItems": true
     }
   },
