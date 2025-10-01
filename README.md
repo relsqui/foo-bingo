@@ -1,4 +1,4 @@
-# First of October Bingo
+<img width="859" height="872" alt="image" src="https://github.com/user-attachments/assets/0b61a044-f0d0-4fb3-86d1-1daa718e726e" />
 
 Play at: https://foo.finn.fun
 * Tap a square to place or remove a marker
