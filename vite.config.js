@@ -4,7 +4,8 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/foo-bingo/",
+  // need this on gh pages but not on custom domain
+  // base: "/foo-bingo/",
   build: {
     outDir: "build"
   },
